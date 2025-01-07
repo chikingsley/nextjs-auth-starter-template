@@ -46,7 +46,7 @@ export default function RootLayout({
           },
         }}
       >
-        <body className={`min-h-screen flex flex-col antialiased`}>
+        <body className="min-h-screen flex flex-col antialiased bg-gradient-to-br from-[#fdf2ff] via-[#fff6f6] to-[#fff9f0]">
           {children}
         </body>
       </ClerkProvider>

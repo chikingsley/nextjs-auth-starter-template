@@ -2,28 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    background: linear-gradient(135deg, #fdf2ff 0%, #fff6f6 50%, #fff9f0 100%);
-    min-height: 100vh;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
-}
-
-.background {
-  overflow: hidden;
-  background: transparent;
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 11px, rgba(242, 242, 242, 0.5) 11px, rgba(242, 242, 242, 0.5) 12px),
-    repeating-linear-gradient(90deg, transparent, transparent 11px, rgba(242, 242, 242, 0.5) 11px, rgba(242, 242, 242, 0.5) 12px);
-}
-
-.mask {
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 40px,
-    rgba(0, 0, 0, 1) calc(100% - 20px),
-    rgba(0, 0, 0, 0) 100%
-  );
 }
 
 @layer base {
@@ -53,6 +39,14 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -79,6 +73,14 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
